@@ -1,6 +1,8 @@
 import { getCounter } from "./backend";
 import { IncreaseButton } from "./increaseButton";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const counter = await getCounter()
   return (

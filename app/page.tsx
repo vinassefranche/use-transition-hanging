@@ -7,6 +7,7 @@ export default async function Home() {
   await fakeDataRetrieval()
   return (
     <div className="flex min-h-screen items-center max-w-3xl flex-col justify-center font-sans py-16 mx-auto bg-white sm:items-start">
+      render date: {new Date().toISOString()}
       <Button />
       <BigBlock />
       <BigBlock />

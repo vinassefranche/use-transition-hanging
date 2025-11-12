@@ -1,13 +1,13 @@
-import { getCounter } from "./backend";
-import { IncreaseButton } from "./increaseButton";
+import { fakeDataRetrieval } from "./backend";
+import { Button } from "./Button";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  await getCounter()
+  await fakeDataRetrieval()
   return (
     <div className="flex min-h-screen items-center max-w-3xl flex-col justify-center font-sans py-16 mx-auto bg-white sm:items-start">
-      <IncreaseButton />
+      <Button />
       <BigBlock />
       <BigBlock />
       <BigBlock />

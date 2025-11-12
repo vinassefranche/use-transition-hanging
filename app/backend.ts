@@ -1,12 +1,9 @@
 'use server'
 
-let counter = 0
-export const getCounter = async () => {
+export const fakeDataRetrieval = async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 10))
-  return counter
 }
 
-export const increaseCounter = async () => {
+export const serverAction = async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 10))
-  counter++
 }

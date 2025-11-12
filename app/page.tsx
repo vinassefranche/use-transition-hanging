@@ -4,20 +4,17 @@ import { IncreaseButton } from "./increaseButton";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const counter = await getCounter()
+  await getCounter()
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center py-32 px-16 bg-white sm:items-start">
-        <div>counter is {counter}</div>
-        <IncreaseButton />
-        <BigBlock />
-        <BigBlock />
-        <BigBlock />
-        <BigBlock />
-        <BigBlock />
-        <BigBlock />
-        <BigBlock />
-      </main>
+    <div className="flex min-h-screen items-center max-w-3xl flex-col justify-center font-sans py-16 mx-auto bg-white sm:items-start">
+      <IncreaseButton />
+      <BigBlock />
+      <BigBlock />
+      <BigBlock />
+      <BigBlock />
+      <BigBlock />
+      <BigBlock />
+      <BigBlock />
     </div>
   );
 }

@@ -9,7 +9,6 @@ export const IncreaseButton = () => {
   return (
     <button className="bg-gray-200 p-1" onClick={() => {
       startTransition(async () => {
-        console.log('increasing')
         await increaseCounter();
         router.refresh()
       })
